@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بيع العملات | Yalla Ludo Trade</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #0078d7;
+      color: white;
+      padding: 15px 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    form {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background: #0078d7;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    a {
+      display: block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #0078d7;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>صفحة بيع العملات</header>
+
+  <form>
+    <label>اسم المستخدم في Yalla Ludo</label>
+    <input type="text" placeholder="اكتب اسم المستخدم" required>
+
+    <label>رقم الـ ID في اللعبة</label>
+    <input type="number" placeholder="اكتب رقم الـ ID" required>
+
+    <label>اختر عدد العملات</label>
+    <select required>
+      <option value="">اختر الكمية</option>
+      <option>1000 عملة</option>
+      <option>5000 عملة</option>
+      <option>10000 عملة</option>
+      <option>20000 عملة</option>
+    </select>
+
+    <label>رقم محفظتك أو وسيلة الدفع</label>
+    <input type="text" placeholder="مثلاً: رقم فودافون كاش أو Binance ID" required>
+
+    <button type="submit">تأكيد البيع</button>
+
+    <a href="index.html">العودة للصفحة الرئيسية</a>
+  </form>
+
+</body>
+</html>
