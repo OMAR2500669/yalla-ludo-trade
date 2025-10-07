@@ -39,7 +39,7 @@
     }
 
     .container {
-      max-width: 700px;
+      max-width: 600px;
       margin: 50px auto;
       background-color: #161b22;
       padding: 30px;
@@ -50,16 +50,6 @@
     h2 {
       text-align: center;
       color: #00bcd4;
-      margin-bottom: 20px;
-    }
-
-    p {
-      text-align: center;
-      opacity: 0.9;
-    }
-
-    form {
-      margin-top: 30px;
     }
 
     label {
@@ -78,7 +68,7 @@
     }
 
     button {
-      background-color: #00bcd4;
+      background-color: #0088cc; /* لون تليجرام */
       color: white;
       border: none;
       padding: 12px 20px;
@@ -86,30 +76,11 @@
       font-size: 1em;
       cursor: pointer;
       width: 100%;
-    }
-
-    button:hover {
-      opacity: 0.9;
-    }
-
-    .contact-links {
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .contact-links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 15px;
-      background-color: #00bcd4;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
       transition: 0.3s;
     }
 
-    .contact-links a:hover {
-      background-color: #0097a7;
+    button:hover {
+      background-color: #00bcd4;
     }
 
     footer {
@@ -118,6 +89,18 @@
       border-top: 1px solid #222;
       opacity: 0.7;
       margin-top: 40px;
+    }
+
+    .contact-info {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: #00bcd4;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -135,21 +118,25 @@
 
   <div class="container">
     <h2>تواصل معنا</h2>
-    <p>يسعدنا تواصلك معنا لأي استفسار أو طلب وساطة جديدة 👇</p>
+    <p style="text-align:center;">لأي استفسار أو مشكلة في عملية البيع أو الشراء أو الوساطة، يمكنك التواصل معنا مباشرة 👇</p>
 
-    <form>
-      <label>الاسم الكامل:</label>
+    <form onsubmit="event.preventDefault(); window.open('https://t.me/OMAR2500669', '_blank');">
+      <label>اسمك:</label>
       <input type="text" placeholder="اكتب اسمك هنا" required>
 
-      <label>الرسالة:</label>
-      <textarea rows="5" placeholder="اكتب رسالتك أو استفسارك هنا..." required></textarea>
+      <label>بريدك الإلكتروني (اختياري):</label>
+      <input type="email" placeholder="example@email.com">
 
-      <button type="submit">إرسال</button>
+      <label>رسالتك:</label>
+      <textarea rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+      <button type="submit">إرسال عبر تليجرام ✈️</button>
     </form>
 
-    <div class="contact-links">
-      <a href="https://wa.me/00218922689155" target="_blank">📞 واتساب (ليبيا)</a>
-      <a href="https://t.me/OMAR2500669" target="_blank">💬 تليجرام</a>
+    <div class="contact-info">
+      <p>📱 واتساب (عالم ليبيا): <a href="https://wa.me/218922689155" target="_blank">+218922689155</a></p>
+      <p>✈️ تليجرام: <a href="https://t.me/OMAR2500669" target="_blank">@OMAR2500669</a></p>
+      <p>🎮 حساب يلا لودو: <strong>7650763169</strong></p>
     </div>
   </div>
 
