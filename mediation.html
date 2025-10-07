@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الوساطة | YallaLudo Trade</title>
+  <title>خدمة الوساطة | YallaLudo Trade</title>
   <style>
     body {
       font-family: "Cairo", sans-serif;
@@ -58,18 +58,6 @@
       margin-bottom: 20px;
     }
 
-    ul {
-      padding-right: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    form {
-      margin-top: 30px;
-    }
-
     label {
       display: block;
       margin: 10px 0 5px;
@@ -85,19 +73,25 @@
       margin-bottom: 15px;
     }
 
-    button {
-      background-color: #00bcd4;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      width: 100%;
+    .contact-buttons {
+      text-align: center;
+      margin-top: 20px;
     }
 
-    button:hover {
-      opacity: 0.9;
+    .contact-buttons a {
+      display: inline-block;
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-buttons a:hover {
+      background-color: #0088a3;
     }
 
     footer {
@@ -122,37 +116,30 @@
   </header>
 
   <div class="container">
-    <h2>خدمة الوساطة الآمنة</h2>
+    <h2>خدمة الوساطة الآمنة 🔒</h2>
     <p>
-      نحن في <strong>YallaLudo Trade</strong> نوفر لك خدمة وساطة تضمن حقك سواء كنت بائعًا أو مشتريًا.
-      دورنا هو التأكد من أن المشتري يستلم ما دفع ثمنه، وأن البائع يحصل على مستحقاته بأمان.
+      نساعدك على تنفيذ عمليات البيع والشراء داخل <strong>Yalla Ludo</strong> بأمان تام.  
+      نحن نعمل كوسيط لضمان أن المشتري يستلم ما اشتراه، والبائع يحصل على مستحقاته بدون مشاكل.
     </p>
 
-    <h3>كيف تعمل الوساطة؟</h3>
-    <ul>
-      <li>1️⃣ المشتري يرسل المبلغ للوسيط (نحن).</li>
-      <li>2️⃣ البائع يسلم المنتج أو الحساب للمشتري.</li>
-      <li>3️⃣ بعد تأكيد الاستلام من المشتري، يتم تحويل المبلغ للبائع.</li>
-    </ul>
-
-    <h3>ابدأ وساطة جديدة</h3>
+    <h3>نموذج طلب وساطة</h3>
     <form>
       <label>اسم البائع:</label>
-      <input type="text" placeholder="اكتب اسم البائع أو رقم حسابه في يلا لودو" required>
+      <input type="text" placeholder="اكتب اسم أو رقم حساب البائع" required>
 
       <label>اسم المشتري:</label>
-      <input type="text" placeholder="اكتب اسم المشتري أو رقم حسابه في يلا لودو" required>
+      <input type="text" placeholder="اكتب اسم أو رقم حساب المشتري" required>
 
-      <label>نوع الصفقة:</label>
-      <input type="text" placeholder="مثال: حساب يلا لودو - عدد كوينز - هدية" required>
+      <label>تفاصيل الصفقة:</label>
+      <textarea rows="4" placeholder="اكتب نوع المنتج، الكمية، أو أي تفاصيل إضافية"></textarea>
 
       <label>قيمة الصفقة:</label>
-      <input type="text" placeholder="مثال: 20 دولار أو ما يعادلها" required>
+      <input type="text" placeholder="مثال: 15 دولار أو ما يعادلها">
 
-      <label>ملاحظات إضافية:</label>
-      <textarea rows="4" placeholder="أضف أي تفاصيل أو تعليمات هنا..."></textarea>
-
-      <button type="submit">إرسال طلب الوساطة</button>
+      <div class="contact-buttons">
+        <a href="https://wa.me/00218922689155" target="_blank">📞 تواصل عبر واتساب (ليبيا)</a>
+        <a href="https://t.me/OMAR2500669" target="_blank">💬 تواصل عبر تليجرام</a>
+      </div>
     </form>
   </div>
 
